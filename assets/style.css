@@ -1,0 +1,152 @@
+:root {
+	font-size: 16px;
+	font-family: sans-serif;
+	--text-primary: darkgrey;
+	--text-secondary: lightgrey;
+	--bg-primary: black;
+	--bg-secondary: blue;
+	--transition-speed: 600ms;
+}
+/* small screens */
+
+/* large screens */
+html {
+	scroll-behavior: smooth;
+}
+body {
+	color: black;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+main {
+	margin-left: 5rem;
+	padding: 1rem;
+}
+
+.navbar {
+	position: fixed;
+	background-color: var(--bg-primary);
+	transition: width 200ms ease, opacity 500ms ease;
+	opacity: 0;
+	font-family: 'Ubuntu Mono', monospace;
+	z-index: 1;
+}
+.logo {
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: var(--text-primary);
+	width: 100%;
+}
+
+.navbar-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+.nav-item {
+	width: 100%;
+}
+.nav-item:last-child {
+	margin-top: auto;
+}
+.nav-link {
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	text-decoration: none;
+	color: var(--text-primary);
+	transition: var(--transition-speed);
+}
+.nav-link:hover svg {
+	color: yellow;
+}
+.nav-link:hover {
+	background-color: var(--bg-secondary);
+}
+.nav-link:hover span {
+	color: black;
+}
+.link-text {
+	display: none;
+	margin-left: 1rem;
+	font-size: 20px;
+}
+
+.nav-link svg {
+	width: 2rem;
+	min-width: 2rem;
+	margin: 0 1.5rem;
+	transition: color 200ms ease;
+}
+/* navbar Hover functions */
+
+.logo svg {
+	transform: rotate(0deg);
+	transition: transform var(--transition-speed);
+}
+.navbar:hover .logo svg {
+	transform: rotate(-180deg);
+	color: yellow;
+}
+.logotext {
+	font-size: 1.25rem;
+}
+.heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 6vw;
+	font-family: 'Ubuntu Mono', monospace;
+	padding: 0;
+}
+.intro {
+	font-weight: bold;
+	text-align: center;
+}
+.header {
+	font-size: 2rem;
+	margin: 50px 0 0 0;
+}
+.lead {
+	font-size: 1.25rem;
+}
+@media only screen and (max-width: 600px) {
+	.navbar {
+		bottom: 0;
+		width: 100vw;
+		height: 5rem;
+	}
+	.logo {
+		display: none;
+	}
+	.navbar-nav {
+		flex-direction: row;
+	}
+	.nav-link {
+		justify-content: center;
+	}
+	main {
+		margin: 0;
+	}
+}
+@media only screen and (min-width: 600px) {
+	.navbar {
+		top: 0;
+		width: 5rem;
+		height: 100vh;
+	}
+	.navbar:hover {
+		width: 16rem;
+	}
+	.navbar:hover .link-text {
+		display: inline;
+	}
+}

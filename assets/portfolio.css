@@ -1,0 +1,59 @@
+.portfolio {
+	margin: 0;
+	padding: 0;
+}
+.grid-container {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-auto-rows: 300px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #353535;
+	font-size: 3rem;
+	color: #fff;
+	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+	height: 100%;
+	width: 100%;
+	border-radius: 4px;
+	transition: all 500ms;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	z-index: 0;
+	background-color: rgba(53, 55, 64, 1);
+	cursor: pointer;
+}
+.cardtextcon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.cardtextitem {
+	width: 50%;
+	opacity: 0;
+	font-size: 1.25rem;
+	transition: opacity 600ms ease;
+}
+.card:hover .cardtextitem {
+	opacity: 1;
+}
+.card:hover .cardtextcon {
+	background-color: rgba(0, 0, 0, 0.76);
+}
+.cardfont {
+	font-family: 'Ubuntu Mono', monospace;
+	text-align: center;
+}
