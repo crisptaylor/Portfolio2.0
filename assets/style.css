@@ -74,6 +74,23 @@ main {
 .nav-link:hover span {
 	color: black;
 }
+.logo-link {
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	text-decoration: none;
+	color: var(--text-primary);
+	transition: var(--transition-speed);
+}
+.logo-link:hover svg {
+	color: yellow;
+}
+.logo-link svg {
+	width: 2rem;
+	min-width: 2rem;
+	margin: 0 1.5rem;
+	transition: color 200ms ease;
+}
 .link-text {
 	display: none;
 	margin-left: 1rem;
