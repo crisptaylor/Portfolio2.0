@@ -31,7 +31,7 @@
 .card:hover {
 	transform: translateY(-5px);
 	z-index: 0;
-	background-color: rgba(53, 55, 64, 1);
+	background-color: rgba(24, 24, 24, 0.562);
 	cursor: pointer;
 }
 .cardtextcon {
@@ -46,7 +46,7 @@
 	color: white;
 }
 .cardtextitem {
-	width: 50%;
+	width: 90%;
 	opacity: 0;
 	font-size: 1.25rem;
 	transition: opacity 600ms ease;
