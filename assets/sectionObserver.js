@@ -12,10 +12,8 @@ const sectiononeObserver = new IntersectionObserver(function (entries, sectionon
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             nav.style.opacity=1;
-            nav.style.index = 2;
         } else {
             nav.style.opacity=0;
-            nav.style.index=-1;
             
         }
     });
