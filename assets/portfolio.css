@@ -67,6 +67,15 @@
 	margin: 0;
 	padding: 0;
 }
+.iconcontainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.iconitems {
+	font-size: 28px;
+	padding: 0 3px 0 3px;
+}
 @media only screen and (max-width: 500px) {
 	.grid-container {
 		display: grid;

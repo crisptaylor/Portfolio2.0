@@ -1,6 +1,13 @@
+.aboutcont {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-right: 6vw;
+}
 .aboutdescrp {
 	font-size: 1.75rem;
 	margin: 50px 0 0 0;
 	font-family: 'Ubuntu Mono', monospace;
 	padding: 0;
+	text-align: center;
 }
