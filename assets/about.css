@@ -6,10 +6,31 @@
 }
 .aboutdescrp {
 	font-size: 1.75rem;
-	margin: 50px 0 0 0;
+	margin: 10px 0 0 0;
 	font-family: 'Ubuntu Mono', monospace;
 	padding: 0;
 	text-align: center;
+}
+.aboutheading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 6vw;
+	margin-top: 10px;
+	font-family: 'Ubuntu Mono', monospace;
+	padding: 0;
+}
+.aboutheader {
+	font-size: 2rem;
+}
+.skills i {
+	font-size: 2rem;
+	margin: 0 10px 0 10px;
+}
+.skillsicon {
+	font-size: 2rem;
+	margin: 0 0 0 10px;
 }
 .buttoncontainer {
 	display: flex;
@@ -57,4 +78,120 @@
 }
 .button:hover::before {
 	transform: translate(4px, 4px);
+}
+/* MY skills section */
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 100px;
+}
+.skills {
+	margin: 5px auto 10px;
+	padding: 10px;
+	width: 50vw;
+	border-radius: 1vw;
+	list-style: none;
+}
+.skills li {
+	margin: 3px 0;
+	padding: 5px;
+}
+.skills h3 {
+	margin: 5px;
+	font-family: 'Ubuntu Mono', monospace;
+	letter-spacing: 3px;
+}
+.bar {
+	background: var(--bg-secondary);
+	display: block;
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 20px;
+	overflow: hidden;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	transition: all 100ms;
+}
+.bar:hover {
+	transform: scale(1.01);
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -5px;
+}
+.bar span {
+	border-radius: 0 5px 5px 0;
+	height: 20px;
+	float: left;
+	background: var(--text-accent);
+}
+.html {
+	width: 100%;
+	animation: html 2s;
+}
+.css {
+	width: 90%;
+	animation: css 2s;
+}
+.javascript {
+	width: 60%;
+	animation: javascript 2s;
+}
+.php {
+	width: 40%;
+	animation: php 2s;
+}
+.mysql {
+	width: 80%;
+	animation: mysql 2s;
+}
+.wordpress {
+	width: 100%;
+	animation: wordpress 2s;
+}
+@keyframes html {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@keyframes css {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+@keyframes javascript {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 60%;
+	}
+}
+@keyframes php {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 40%;
+	}
+}
+@keyframes mysql {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 80%;
+	}
+}
+@keyframes wordpress {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
 }

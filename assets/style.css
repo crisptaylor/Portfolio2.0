@@ -1,10 +1,11 @@
 :root {
 	font-size: 16px;
 	font-family: sans-serif;
-	--text-primary: darkgrey;
-	--text-secondary: lightgrey;
+	--text-primary: #ffffff;
+	--text-secondary: #e5e5e5;
+	--text-accent: #fca311;
 	--bg-primary: black;
-	--bg-secondary: blue;
+	--bg-secondary: #14213d;
 	--transition-speed: 600ms;
 }
 /* small screens */
@@ -67,13 +68,13 @@ main {
 	transition: var(--transition-speed);
 }
 .nav-link:hover svg {
-	color: yellow;
+	color: var(--text-accent);
 }
 .nav-link:hover {
 	background-color: var(--bg-secondary);
 }
 .nav-link:hover span {
-	color: black;
+	color: var(--text-accent);
 }
 .logo-link {
 	display: flex;
@@ -84,7 +85,7 @@ main {
 	transition: var(--transition-speed);
 }
 .logo-link:hover svg {
-	color: yellow;
+	color: var(--text-accent);
 }
 .logo-link svg {
 	width: 2rem;
@@ -112,7 +113,7 @@ main {
 }
 .navbar:hover .logo svg {
 	transform: rotate(-180deg);
-	color: yellow;
+	color: var(--text-accent);
 }
 .logotext {
 	font-size: 1.25rem;
@@ -134,7 +135,7 @@ main {
 	margin: 50px 0 0 0;
 }
 .lead {
-	font-size: 1.25rem;
+	font-size: 1.75rem;
 }
 @media only screen and (max-width: 600px) {
 	.navbar {

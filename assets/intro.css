@@ -36,5 +36,5 @@ header {
 }
 .scrolldownbutton:hover {
 	transform: translateY(3px);
-	color: yellow;
+	color: var(--text-accent);
 }
