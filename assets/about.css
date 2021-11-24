@@ -85,7 +85,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-right: 100px;
 }
 .skills {
 	margin: 5px auto 10px;
@@ -106,7 +105,7 @@
 .bar {
 	background: var(--bg-secondary);
 	display: block;
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 5px;
 	height: 20px;
 	overflow: hidden;
