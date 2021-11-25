@@ -2,6 +2,7 @@ header {
 	background-position: center center;
 	background-repeat: no repeat;
 	background-size: cover;
+	z-index: 2;
 }
 .container {
 	display: flex;

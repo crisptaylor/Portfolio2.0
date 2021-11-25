@@ -138,7 +138,6 @@ main {
 	font-size: 1.75rem;
 }
 .Backtotopbutton {
-	color: white;
 	font-size: 2.25rem;
 	position: fixed;
 	bottom: 0;
@@ -146,7 +145,7 @@ main {
 	margin: 0 20px 10px 0;
 }
 .Backtotopbutton a i {
-	color: black;
+	color: var(--text-accent);
 	transition: opacity 600ms ease, transform 200ms ease;
 }
 .Backtotopbutton:hover a i {
