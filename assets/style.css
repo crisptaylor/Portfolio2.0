@@ -176,6 +176,9 @@ main {
 	.Backtotopbutton {
 		margin: 0 20px 90px 0;
 	}
+	.Backtotopbutton a i {
+		color: var(--text-accent);
+	}
 }
 @media only screen and (min-width: 600px) {
 	.navbar {
