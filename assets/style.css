@@ -25,12 +25,19 @@ main {
 }
 
 .navbar {
+	width: 5rem;
 	position: fixed;
 	background-color: var(--bg-primary);
 	transition: width 200ms ease, opacity 500ms ease;
 	opacity: 0;
 	font-family: 'Ubuntu Mono', monospace;
 	z-index: 1;
+}
+.navbar:hover {
+	width: 10rem;
+	box-shadow: 14px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 14px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 14px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .logo {
 	font-weight: bold;
