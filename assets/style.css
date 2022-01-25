@@ -23,21 +23,24 @@ main {
 	margin-left: 5rem;
 	padding: 1rem;
 }
+* {
+	transition: var(--transition-speed);
+}
 
 .navbar {
 	width: 5rem;
 	position: fixed;
 	background-color: var(--bg-primary);
-	transition: width 200ms ease, opacity 500ms ease;
+	transition: width 600ms ease, opacity 500ms ease;
 	opacity: 0;
 	font-family: 'Ubuntu Mono', monospace;
 	z-index: 1;
 }
 .navbar:hover {
 	width: 10rem;
-	box-shadow: 14px 0px 5px 0px rgba(0, 0, 0, 0.75);
-	-webkit-box-shadow: 14px 0px 5px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 14px 0px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 22px 1px 21px -4px rgba(43, 43, 43, 0.34);
+	-webkit-box-shadow: 22px 1px 21px -4px rgba(43, 43, 43, 0.34);
+	-moz-box-shadow: 22px 1px 21px -4px rgba(43, 43, 43, 0.34);
 }
 .logo {
 	font-weight: bold;
@@ -46,6 +49,7 @@ main {
 	text-align: center;
 	color: var(--text-primary);
 	width: 100%;
+	transition: var(--transition-speed);
 }
 
 .navbar-nav {
@@ -166,6 +170,11 @@ main {
 		width: 100vw;
 		height: 5rem;
 	}
+	.navbar:hover {
+		box-shadow: none;
+		width: 100vw;
+	}
+
 	.logo {
 		display: none;
 	}
