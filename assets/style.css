@@ -169,6 +169,7 @@ main {
 	}
 	.navbar:hover {
 		width: 100vw;
+		height: 5rem;
 	}
 
 	.logo {
