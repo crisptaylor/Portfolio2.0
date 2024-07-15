@@ -298,7 +298,7 @@ main {
 
 
 #lampwrapper{
-	background-color: black;
+	background: radial-gradient(#500, #000);
 	padding:10px 0;
 }
 
